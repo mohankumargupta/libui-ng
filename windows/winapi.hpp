@@ -20,7 +20,9 @@
 // TODO is all of this necessary? how is NTDDI_VERSION used?
 // TODO platform update sp2
 #define WINVER			0x0600	/* from Microsoft's winnls.h */
-#define _WIN32_WINNT		0x0600
+#ifndef _WIN32_WINNT
+    #define _WIN32_WINNT		0x0600
+#endif
 #define _WIN32_WINDOWS	0x0600	/* from Microsoft's pdh.h */
 #define _WIN32_IE			0x0700
 #define NTDDI_VERSION		0x06000000
