@@ -1,0 +1,10 @@
+set shell := ["sh", "-c"]
+set windows-shell := ["powershell", "-c"]
+
+# copy ui.lib to this folder
+
+_main:
+    @just --list
+
+zigbindings:
+  zig translate-c ui.h -target x86_64-windows > ui.zig
