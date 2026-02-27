@@ -7,4 +7,7 @@ _main:
     @just --list
 
 zigbindings:
-  zig translate-c ui.h -target x86_64-windows -lc > ui.zig
+  zig build
+
+mojobindings:
+  python generate_bindings.py
