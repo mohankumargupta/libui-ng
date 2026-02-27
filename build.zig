@@ -1,4 +1,4 @@
-// to build: zig build
+// to build: zig build -Doptimize=ReleaseSmall
 // By default, it builds a static library
 // if you want dynamic library: zig build -Dlibtype=shared
 
