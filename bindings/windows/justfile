@@ -1,13 +1,22 @@
 set shell := ["sh", "-c"]
 set windows-shell := ["powershell", "-c"]
 
-# copy ui.lib to this folder
+
+[windows]
+copy src dest:
+    copy {{src}} {{dest}}
+
+[unix]
+copy src dest:
+    cp {{src}} {{dest}}
+
 
 _main:
     @just --list
 
 zigbindings:
   zig build
+  @just copy zig-out/ui.zig ui.zig
 
 mojobindings:
   python generate_bindings.py

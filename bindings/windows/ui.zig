@@ -1,4 +1,4 @@
-﻿const __root = @This();
+const __root = @This();
 pub const __builtin = @import("std").zig.c_translation.builtins;
 pub const __helpers = @import("std").zig.c_translation.helpers;
 
@@ -1922,8 +1922,8 @@ pub const UINT32_C = __helpers.U_SUFFIX;
 pub const UINT64_C = __helpers.ULL_SUFFIX;
 pub const INTMAX_C = __helpers.LL_SUFFIX;
 pub const UINTMAX_C = __helpers.ULL_SUFFIX;
-pub const _UI_EXTERN = @compileError("unable to translate C expr: unexpected token 'extern'"); // ui.h:39:9
-pub const _UI_ENUM = @compileError("unable to translate C expr: unexpected token 'typedef'"); // ui.h:44:9
+pub const _UI_EXTERN = @compileError("unable to translate C expr: unexpected token 'extern'"); // C:\Users\mohan\Developer\libui-ng\bindings\windows\ui.h:39:9
+pub const _UI_ENUM = @compileError("unable to translate C expr: unexpected token 'typedef'"); // C:\Users\mohan\Developer\libui-ng\bindings\windows\ui.h:44:9
 pub const uiPi = @as(f64, 3.14159265358979323846264338327950288419716939937510582097494459);
 pub const uiDrawDefaultMiterLimit = @as(f64, 10.0);
 pub const uiTableModelColumnNeverEditable = -@as(c_int, 1);
