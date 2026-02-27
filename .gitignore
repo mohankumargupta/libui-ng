@@ -2,3 +2,4 @@ subprojects/
 .zig-cache/
 zig-out/
 *.o
+ui.lib
