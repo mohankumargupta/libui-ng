@@ -7,4 +7,4 @@ _main:
     @just --list
 
 zigbindings:
-  zig translate-c ui.h -target x86_64-windows > ui.zig
+  zig translate-c ui.h -target x86_64-windows -lc > ui.zig
